@@ -1,0 +1,29 @@
+<section class="contact-section" id="contacto" aria-labelledby="contact-title">
+    <div class="contact-section__main">
+        <div class="container">
+            <app-section-heading eyebrow="Contacto" title="Hablemos de tu proyecto"
+                description="Déjanos tus datos y nos pondremos en contacto contigo para conocer las necesidades de tu proyecto."
+                headingId="contact-title"></app-section-heading>
+
+            <div class="contact-section__form-wrapper">
+                <app-contact-form formEndpoint="https://formspree.io/f/TU_ID_DE_FORMSPREE"></app-contact-form>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section__social">
+        <div class="container contact-section__social-container">
+            <div class="contact-section__social-intro">
+                <h3>¿Prefieres escribirnos directamente?</h3>
+
+                <p>
+                    Comunícate con nosotros por WhatsApp o conoce nuestros
+                    proyectos a través de Instagram.
+                </p>
+            </div>
+
+            <app-contact-options whatsappNumber="+57 313 860 9299" whatsappUrl="https://wa.me/573138609299"
+                instagramUsername="@edifica.ingenieria" instagramUrl="https://www.instagram.com/"></app-contact-options>
+        </div>
+    </div>
+</section>

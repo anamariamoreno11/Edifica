@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="container header__container">
+        <app-logo variant="light" size="header" link="#inicio"></app-logo>
+
+        <app-navigation-menu activeSection="inicio" [mobileOpen]="menuOpen"
+            (linkSelected)="closeMenu()"></app-navigation-menu>
+
+        <button class="header__menu-button" type="button" [class.header__menu-button--open]="menuOpen"
+            [attr.aria-expanded]="menuOpen" aria-label="Abrir o cerrar menú de navegación" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>

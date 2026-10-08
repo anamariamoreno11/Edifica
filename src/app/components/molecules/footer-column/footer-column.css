@@ -1,0 +1,22 @@
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column__title {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+
+.footer-column__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.footer-column__item {
+    display: flex;
+}

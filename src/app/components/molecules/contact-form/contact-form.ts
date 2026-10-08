@@ -1,0 +1,12 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-contact-form',
+  standalone: true,
+  imports: [],
+  templateUrl: './contact-form.html',
+  styleUrl: './contact-form.css'
+})
+export class ContactForm {
+  @Input() formEndpoint = 'https://formspree.io/f/TU_ID_DE_FORMSPREE';
+}

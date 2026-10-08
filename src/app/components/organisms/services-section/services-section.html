@@ -1,0 +1,12 @@
+<section class="services-section section" id="servicios" aria-labelledby="services-title">
+    <div class="container">
+        <app-section-heading eyebrow="Servicios" title="¿Qué hacemos?" headingId="services-title"></app-section-heading>
+
+        <div class="services-section__grid">
+            @for (service of services; track service.id) {
+            <app-service-card [title]="service.title" [description]="service.description"
+                [iconSource]="service.iconSource" [iconAlt]="service.iconAlt"></app-service-card>
+            }
+        </div>
+    </div>
+</section>

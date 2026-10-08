@@ -1,0 +1,14 @@
+<div class="footer-contact-item">
+    <app-icon [source]="iconSource" alt="" size="small" [decorative]="true"></app-icon>
+
+    @if (href) {
+    <a class="footer-contact-item__value footer-contact-item__link" [href]="href"
+        [target]="external ? '_blank' : '_self'" [attr.rel]="external ? 'noopener noreferrer' : null">
+        {{ value }}
+    </a>
+    } @else {
+    <span class="footer-contact-item__value">
+        {{ value }}
+    </span>
+    }
+</div>

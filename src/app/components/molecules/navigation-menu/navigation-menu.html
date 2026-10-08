@@ -1,0 +1,9 @@
+<nav class="navigation-menu" [class.navigation-menu--open]="mobileOpen" aria-label="Navegación principal">
+    <ul class="navigation-menu__list">
+        @for (item of navigationItems; track item.href) {
+        <li class="navigation-menu__item" (click)="selectLink()">
+            <app-nav-link [label]="item.label" [href]="item.href" [active]="isActive(item.href)"></app-nav-link>
+        </li>
+        }
+    </ul>
+</nav>

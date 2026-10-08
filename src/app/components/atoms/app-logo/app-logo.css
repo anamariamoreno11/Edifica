@@ -1,0 +1,36 @@
+:host {
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.app-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.app-logo__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.app-logo--header {
+    width: var(--logo-width-header);
+}
+
+.app-logo--footer {
+    width: var(--logo-width-footer);
+}
+
+@media (max-width: 768px) {
+    .app-logo--header {
+        width: 210px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-logo--header {
+        width: 175px;
+    }
+}

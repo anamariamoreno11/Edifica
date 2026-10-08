@@ -1,0 +1,43 @@
+<form class="contact-form" [action]="formEndpoint" method="POST">
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-name">
+            Nombre completo
+        </label>
+
+        <input class="contact-form__input" id="contact-name" name="name" type="text" placeholder="Escribe tu nombre"
+            autocomplete="name" required />
+    </div>
+
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-email">
+            Correo electrónico
+        </label>
+
+        <input class="contact-form__input" id="contact-email" name="email" type="email" placeholder="correo@ejemplo.com"
+            autocomplete="email" required />
+    </div>
+
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-phone">
+            Número de contacto
+        </label>
+
+        <input class="contact-form__input" id="contact-phone" name="phone" type="tel" placeholder="+57 300 000 0000"
+            autocomplete="tel" required />
+    </div>
+
+    <div class="contact-form__field contact-form__field--full">
+        <label class="contact-form__label" for="contact-message">
+            Cuéntanos sobre tu proyecto
+        </label>
+
+        <textarea class="contact-form__textarea" id="contact-message" name="message" rows="5"
+            placeholder="Describe brevemente el servicio que necesitas" required></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="Nueva solicitud desde la página web de Edifica" />
+
+    <button class="contact-form__button" type="submit">
+        Enviar solicitud
+    </button>
+</form>

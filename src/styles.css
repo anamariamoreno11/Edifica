@@ -1,0 +1,472 @@
+/* =====================================================
+   EDIFICA INGENIERÍA ESTRUCTURAL
+   Sistema global de diseño
+===================================================== */
+
+/* -----------------------------------------------------
+   VARIABLES GLOBALES
+----------------------------------------------------- */
+
+:root {
+    /* Colores principales de la marca */
+    --color-primary: #bf3b0b;
+    --color-primary-dark: #982d08;
+    --color-primary-light: #d75a29;
+    --color-primary-soft: #f8ebe5;
+
+    /* Colores oscuros */
+    --color-dark: #242424;
+    --color-dark-secondary: #303030;
+    --color-dark-soft: #414141;
+
+    /* Colores neutros */
+    --color-white: #ffffff;
+    --color-black: #111111;
+    --color-text: #242424;
+    --color-text-secondary: #555555;
+    --color-text-light: #747474;
+    --color-border: #e4e4e4;
+    --color-background: #ffffff;
+    --color-background-soft: #f7f7f7;
+    --color-background-dark: #242424;
+
+    /* Tipografías */
+    --font-primary: Arial, Helvetica, sans-serif;
+    --font-logo: Georgia, 'Times New Roman', serif;
+
+    /* Tamaños de texto */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 3.2rem;
+    --font-size-4xl: 3.75rem;
+
+    /* Pesos de fuente */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Alturas de línea */
+    --line-height-tight: 1.15;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.7;
+
+    /* Espaciados */
+    --spacing-2xs: 0.25rem;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+
+    /* Tamaños generales */
+    --header-height: 150px;
+    --container-width: 1200px;
+    --container-padding: 24px;
+
+    /* Bordes */
+    --border-width: 1px;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-full: 999px;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+
+    /* Transiciones */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* Capas */
+    --z-header: 100;
+    --z-menu: 200;
+    --z-modal: 1000;
+
+    /* Tamaños de iconos */
+        --icon-size-xs: 18px;
+        --icon-size-sm: 24px;
+        --icon-size-md: 40px;
+        --icon-size-lg: 160px;
+    
+        /* Tamaños del logo */
+        --logo-width-header: 180px;
+        --logo-width-footer: 190px;
+    
+        /* Navegación */
+        --nav-font-size: 0.8rem;
+        --nav-gap: 3rem;
+    
+        /* Tarjetas */
+        --service-card-min-height: 255px;
+        --service-card-padding: 2rem;
+    
+        /* Footer */
+        --footer-text-color: #f2f2f2;
+        --footer-muted-color: #c8c8c8;
+    
+        /* Fondo naranja */
+        --color-contact-background: #b93408;
+        --color-contact-background-dark: #9d2a05;
+}
+
+/* -----------------------------------------------------
+   RESET GENERAL
+----------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-primary);
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* -----------------------------------------------------
+   TIPOGRAFÍA GLOBAL
+----------------------------------------------------- */
+
+h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+p {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
+}
+
+/* -----------------------------------------------------
+   CONTENEDORES GENERALES
+----------------------------------------------------- */
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+}
+
+.section {
+    padding-block: var(--spacing-4xl);
+}
+
+.section--soft {
+    background-color: var(--color-background-soft);
+}
+
+.section--dark {
+    background-color: var(--color-background-dark);
+    color: var(--color-white);
+}
+
+/* -----------------------------------------------------
+   CLASES DE COLOR
+----------------------------------------------------- */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
+
+/* -----------------------------------------------------
+   TÍTULOS DE SECCIÓN
+----------------------------------------------------- */
+
+.section-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.section-label::before,
+.section-label::after {
+    width: 45px;
+    height: 1px;
+    background-color: var(--color-primary);
+    content: '';
+}
+
+.section-title {
+    margin-top: var(--spacing-sm);
+    color: var(--color-dark);
+    font-size: var(--font-size-3xl);
+    text-align: center;
+}
+
+.section-description {
+    max-width: 650px;
+    margin: var(--spacing-md) auto 0;
+    text-align: center;
+}
+
+/* -----------------------------------------------------
+   BOTONES GLOBALES
+----------------------------------------------------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border: var(--border-width) solid transparent;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition:
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        color var(--transition-normal),
+        transform var(--transition-fast);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn--outline {
+    border-color: var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.btn--outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* -----------------------------------------------------
+   TARJETAS
+----------------------------------------------------- */
+
+.card {
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-white);
+    transition:
+        box-shadow var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+/* -----------------------------------------------------
+   ACCESIBILIDAD
+----------------------------------------------------- */
+
+:focus-visible {
+    outline: 3px solid rgba(191, 59, 11, 0.35);
+    outline-offset: 3px;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* -----------------------------------------------------
+   DISEÑO RESPONSIVE
+----------------------------------------------------- */
+
+@media (max-width: 992px) {
+    :root {
+        --font-size-4xl: 3rem;
+        --font-size-3xl: 2.25rem;
+        --spacing-4xl: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 72px;
+        --container-padding: 20px;
+        --font-size-4xl: 2.5rem;
+        --font-size-3xl: 2rem;
+        --font-size-2xl: 1.75rem;
+        --spacing-4xl: 4rem;
+        --spacing-3xl: 3rem;
+    }
+
+    .section-label::before,
+    .section-label::after {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 16px;
+        --font-size-4xl: 2.1rem;
+        --font-size-3xl: 1.75rem;
+        --spacing-4xl: 3.5rem;
+    }
+    
+}

@@ -1,0 +1,9 @@
+<a class="app-button" [class.app-button--primary]="variant === 'primary'"
+    [class.app-button--outline]="variant === 'outline'" [class.app-button--light]="variant === 'light'"
+    [class.app-button--small]="size === 'small'" [class.app-button--medium]="size === 'medium'"
+    [class.app-button--large]="size === 'large'" [href]="href" [target]="target"
+    [attr.rel]="target === '_blank' ? 'noopener noreferrer' : null" [attr.aria-label]="computedAriaLabel">
+    <span class="app-button__label">
+        {{ label }}
+    </span>
+</a>

@@ -1,0 +1,14 @@
+<a class="social-link" [href]="href" [target]="external ? '_blank' : '_self'"
+    [attr.rel]="external ? 'noopener noreferrer' : null" [attr.aria-label]="label + ': ' + value">
+    <img class="social-link__icon" [src]="iconSource" alt="" aria-hidden="true" />
+
+    <span class="social-link__content">
+        <strong class="social-link__label">
+            {{ label }}
+        </strong>
+
+        <span class="social-link__value">
+            {{ value }}
+        </span>
+    </span>
+</a>

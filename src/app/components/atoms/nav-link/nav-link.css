@@ -1,0 +1,40 @@
+:host {
+    display: inline-flex;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: var(--spacing-xs) 0;
+    color: var(--color-dark);
+    font-size: var(--nav-font-size);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    transition: color var(--transition-normal);
+}
+
+.nav-link::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    content: '';
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--transition-normal);
+}
+
+.nav-link:hover,
+.nav-link--active {
+    color: var(--color-primary);
+}
+
+.nav-link:hover::after,
+.nav-link--active::after {
+    transform: scaleX(1);
+}

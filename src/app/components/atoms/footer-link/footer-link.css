@@ -1,0 +1,19 @@
+:host {
+    display: block;
+}
+
+.footer-link {
+    display: inline-flex;
+    padding: var(--spacing-2xs) 0;
+    color: var(--footer-muted-color);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+    transition:
+        color var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.footer-link:hover {
+    color: var(--color-white);
+    transform: translateX(4px);
+}

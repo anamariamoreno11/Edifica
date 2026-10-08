@@ -1,0 +1,5 @@
+<span class="app-icon" [class.app-icon--small]="size === 'small'" [class.app-icon--medium]="size === 'medium'"
+    [class.app-icon--large]="size === 'large'" [class.app-icon--extra-large]="size === 'extra-large'"
+    [attr.aria-hidden]="decorative ? true : null">
+    <img class="app-icon__image" [src]="source" [alt]="decorative ? '' : alt" />
+</span>
