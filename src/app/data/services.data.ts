@@ -5,48 +5,56 @@ export const SERVICES: Service[] = [
     id: 1,
     title: 'Diseño estructural',
     description:
-      'Diseñamos estructuras seguras y eficientes adaptadas a cada proyecto.',
+      'Estructuras seguras, eficientes y normativas.',
     iconSource: '/images/icons/services/design-structural.png',
-    iconAlt: 'Escuadra de diseño estructural'
+    iconAlt: 'Diseño estructural'
   },
   {
     id: 2,
-    title: 'Análisis estructural',
+    title: 'Patología estructural',
     description:
-      'Realizamos análisis estructurales avanzados para garantizar estabilidad y resistencia.',
-    iconSource: '/images/icons/services/structural-analysis.png',
-    iconAlt: 'Monitor con gráfica de análisis estructural'
+      'Diagnóstico de daños, causas y recomendaciones de intervención.',
+    iconSource: '/images/icons/services/structural-pathology.png',
+    iconAlt: 'Patología estructural'
   },
   {
     id: 3,
-    title: 'Cálculo estructural',
+    title: 'Análisis de vulnerabilidad estructural',
     description:
-      'Realizamos cálculos estructurales bajo normativas nacionales e internacionales.',
-    iconSource: '/images/icons/services/structural-calculation.png',
-    iconAlt: 'Calculadora de cálculo estructural'
+      'Evaluación del desempeño y definición de reforzamientos.',
+    iconSource: '/images/icons/services/structural-analysis.png',
+    iconAlt: 'Análisis de vulnerabilidad estructural'
   },
   {
     id: 4,
-    title: 'Asesoría técnica',
+    title: 'Trámites de licencias',
     description:
-      'Brindamos acompañamiento técnico en cada etapa del proyecto, optimizando recursos y tiempos.',
-    iconSource: '/images/icons/services/technical-consulting.png',
-    iconAlt: 'Casco de asesoría técnica'
+      'Gestión y acompañamiento en licencias de construcción.',
+    iconSource: '/images/icons/services/construction-license.png',
+    iconAlt: 'Trámites de licencias'
   },
   {
     id: 5,
-    title: 'Supervisión e interventoría',
+    title: 'Reforzamientos y adecuaciones',
     description:
-      'Realizamos control técnico y administrativo para asegurar calidad y cumplimiento.',
-    iconSource: '/images/icons/services/supervision.png',
-    iconAlt: 'Lista de supervisión e interventoría'
+      'Diseño de soluciones para el mejoramiento y adecuación de estructuras existentes.',
+    iconSource: '/images/icons/services/structural-reinforcement.png',
+    iconAlt: 'Reforzamientos y adecuaciones'
   },
   {
     id: 6,
-    title: 'Estudios y diseños de edificaciones',
+    title: 'Construcción',
     description:
-      'Desarrollamos estudios y diseños completos para proyectos de edificación.',
-    iconSource: '/images/icons/services/building-design.png',
-    iconAlt: 'Edificios de estudios y diseños'
+      'Ejecución de obras con control técnico y cumplimiento normativo.',
+    iconSource: '/images/icons/services/construction.png',
+    iconAlt: 'Construcción'
+  },
+  {
+    id: 7,
+    title: 'Supervisión e interventoría',
+    description:
+      'Control técnico, seguimiento de calidad y cumplimiento del diseño.',
+    iconSource: '/images/icons/services/supervision.png',
+    iconAlt: 'Supervisión e interventoría'
   }
 ];

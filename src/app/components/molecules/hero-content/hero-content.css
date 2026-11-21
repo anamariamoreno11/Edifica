@@ -31,6 +31,48 @@
     line-height: var(--line-height-relaxed);
 }
 
+/* Versículo bíblico */
+
+.hero-verse {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+.hero-verse__icon {
+    width: 44px;
+    height: 44px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.hero-verse__content {
+    border-left: 2px solid var(--color-primary);
+    padding-left: 16px;
+}
+
+.hero-verse__reference {
+    display: block;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-verse__text {
+    margin: 6px 0 0;
+    color: var(--color-text);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Diseño responsive */
+
 @media (max-width: 1100px) {
     .hero-content__title {
         font-size: var(--font-size-3xl);
@@ -46,5 +88,24 @@
 @media (max-width: 480px) {
     .hero-content__line {
         white-space: normal;
+    }
+
+    .hero-verse {
+        gap: 12px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .hero-verse__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .hero-verse__content {
+        padding-left: 12px;
+    }
+
+    .hero-verse__text {
+        font-size: 13px;
     }
 }
