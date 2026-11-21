@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './contact-form.css'
 })
 export class ContactForm {
-  @Input() formEndpoint = 'https://formspree.io/f/TU_ID_DE_FORMSPREE';
+@Input() formEndpoint = 'https://formspree.io/f/xyewnyjk';
 }

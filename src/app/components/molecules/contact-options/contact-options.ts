@@ -9,9 +9,9 @@ import { SocialLink } from '../../atoms/social-link/social-link';
   styleUrl: './contact-options.css'
 })
 export class ContactOptions {
-  @Input() whatsappNumber = '+57 313 860 9299';
-  @Input() whatsappUrl = 'https://wa.me/573138609299';
+  @Input() whatsappNumber = '+57 314 604 5189';
+@Input() whatsappUrl = 'https://wa.me/573146045189';
 
-  @Input() instagramUsername = '@edifica.ingenieria';
-  @Input() instagramUrl = 'https://www.instagram.com/';
+@Input() instagramUsername = '@edifica_ingenieria_estructural';
+@Input() instagramUrl = 'https://www.instagram.com/edifica_ingenieria_estructural/';
 }
